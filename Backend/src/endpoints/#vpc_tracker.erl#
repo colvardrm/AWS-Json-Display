@@ -1,0 +1,86 @@
+-module(vpc_tracker).
+-include("../include/aws_info.hrl").
+-behaviour(gen_server).
+
+%% API
+-export([
+         start_link/2,
+        ]).
+
+%% gen_server callbacks
+-export([init/1, handle_call/3, handle_cast/2, handle_info/2,
+         terminate/2, code_change/3]).
+
+-define(SERVER, ?MODULE).
+
+
+-record(state, {
+          region :: binary(),
+          type :: instance | volume | vpc,
+          cached_json = <<>> :: binary(),
+          cached_at :: erlang:timestamp(),
+          worker_pid :: pid(),
+          times_accessed :: integer()
+         }).
+
+%%%===================================================================
+%%% API
+%%%===================================================================
+start_link() ->
+  MyName = region_worker_name(Region, Type),
+  gen_server:start_link({local, MyName}, ?MODULE, [Region, Type], []).
+
+get_vpc_data() ->
+  gen_server:call(MyName, get_json).
+
+%%%===================================================================
+%%% gen_server callbacks
+%%%===================================================================
+init([Region, Type]) ->
+  timer:send_interval(timer:minutes(10), refresh_data),
+  self()! refresh_data,
+  {ok, #state{region = Region,
+              type = Type}}.
+
+handle_call(get_json, _From, State = #state{cached_json = Json,
+                                            cached_at = CachedAt}) ->
+  {reply, {ok, Json, CachedAt}, State}.
+
+handle_cast(not_implemented, State) ->
+  {noreply, State}.
+
+
+handle_info(refresh_data, State = #state {type = Type,
+                                          region = Region,
+                                          worker_pid = undefined}) ->
+  Self = self(),
+  WorkerPid = spawn_link(fun() -> get_aws_info(Self, Region, Type) end),
+  {noreply, State#state{worker_pid = WorkerPid}};
+
+handle_info(refresh_data, State) ->
+  %% Ignore new requests is there is a worker already getting the data
+  {noreply, State};
+
+handle_info({new_json, Json}, State = #state{region = Region,
+                                            type = Type}) ->
+  ?I_RAISE_BUS_MSG(#aws_info_bus_msg{
+                      region = Region,
+                      type = Type,
+                      json = Json}),
+  {noreply, State#state{worker_pid = undefined,
+                        cached_at = os:timestamp(),
+                        cached_json = Json}}.
+
+terminate(_Reason, _State) ->
+  ok.
+
+code_change(_OldVsn, State, _Extra) ->
+  {ok, State}.
+
+%%%===================================================================
+%%% Internal functions
+%%%===================================================================
+get_aws_info(ParentPid) ->
+  Base = "aws ec2 describe-vpcs",
+  Res = os:cmd(Command),
+  ParentPid ! {new_json, list_to_binary(Res)}.

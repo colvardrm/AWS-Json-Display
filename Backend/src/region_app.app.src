@@ -1,0 +1,21 @@
+{application, region_app,
+ [{description, "An OTP application"},
+  {vsn, "0.1.0"},
+  {registered, []},
+  {mod, {region_app, []}},
+  {registered, [app_sup, [] ]},
+  {applications,
+   [kernel,
+    stdlib,
+    cowboy,
+    jsx,
+    gproc,
+    sasl,
+    lager
+   ]},
+  {env,[]},
+  {modules, []},
+  {maintainers, []},
+  {licenses, []},
+  {links, []}
+ ]}.
