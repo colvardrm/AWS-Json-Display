@@ -1,0 +1,797 @@
+{
+    "Reservations": [
+        {
+            "OwnerId": "375321850564", 
+            "ReservationId": "r-4e6b6aef", 
+            "Groups": [], 
+            "Instances": [
+                {
+                    "Monitoring": {
+                        "State": "disabled"
+                    }, 
+                    "PublicDnsName": "ec2-54-229-22-163.eu-west-1.compute.amazonaws.com", 
+                    "State": {
+                        "Code": 16, 
+                        "Name": "running"
+                    }, 
+                    "EbsOptimized": true, 
+                    "LaunchTime": "2016-04-09T07:18:50.000Z", 
+                    "PublicIpAddress": "54.229.22.163", 
+                    "PrivateIpAddress": "172.32.8.209", 
+                    "ProductCodes": [
+                        {
+                            "ProductCodeId": "6x5jmcajty9edm3f211pqjfn2", 
+                            "ProductCodeType": "marketplace"
+                        }
+                    ], 
+                    "VpcId": "vpc-df83c9ba", 
+                    "StateTransitionReason": null, 
+                    "InstanceId": "i-0beaf480", 
+                    "ImageId": "ami-b15ef8c2", 
+                    "PrivateDnsName": "ip-172-32-8-209.eu-west-1.compute.internal", 
+                    "KeyName": "LinuxEncoder", 
+                    "SecurityGroups": [
+                        {
+                            "GroupName": "GRIT Relay", 
+                            "GroupId": "sg-b82177dc"
+                        }
+                    ], 
+                    "ClientToken": "nmGXF1454409913768", 
+                    "SubnetId": "subnet-4793b630", 
+                    "InstanceType": "c4.xlarge", 
+                    "NetworkInterfaces": [
+                        {
+                            "Status": "in-use", 
+                            "SourceDestCheck": true, 
+                            "VpcId": "vpc-df83c9ba", 
+                            "Description": "Primary network interface", 
+                            "Association": {
+                                "PublicIp": "54.229.22.163", 
+                                "PublicDnsName": "ec2-54-229-22-163.eu-west-1.compute.amazonaws.com", 
+                                "IpOwnerId": "375321850564"
+                            }, 
+                            "NetworkInterfaceId": "eni-341ef57f", 
+                            "PrivateIpAddresses": [
+                                {
+                                    "PrivateDnsName": "ip-172-32-8-209.eu-west-1.compute.internal", 
+                                    "Association": {
+                                        "PublicIp": "54.229.22.163", 
+                                        "PublicDnsName": "ec2-54-229-22-163.eu-west-1.compute.amazonaws.com", 
+                                        "IpOwnerId": "375321850564"
+                                    }, 
+                                    "Primary": true, 
+                                    "PrivateIpAddress": "172.32.8.209"
+                                }
+                            ], 
+                            "PrivateDnsName": "ip-172-32-8-209.eu-west-1.compute.internal", 
+                            "Attachment": {
+                                "Status": "attached", 
+                                "DeviceIndex": 0, 
+                                "DeleteOnTermination": true, 
+                                "AttachmentId": "eni-attach-0d74e9ea", 
+                                "AttachTime": "2016-02-02T10:45:14.000Z"
+                            }, 
+                            "Groups": [
+                                {
+                                    "GroupName": "GRIT Relay", 
+                                    "GroupId": "sg-b82177dc"
+                                }
+                            ], 
+                            "SubnetId": "subnet-4793b630", 
+                            "OwnerId": "375321850564", 
+                            "PrivateIpAddress": "172.32.8.209"
+                        }
+                    ], 
+                    "SourceDestCheck": true, 
+                    "Placement": {
+                        "Tenancy": "default", 
+                        "GroupName": null, 
+                        "AvailabilityZone": "eu-west-1c"
+                    }, 
+                    "Hypervisor": "xen", 
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/sda1", 
+                            "Ebs": {
+                                "Status": "attached", 
+                                "DeleteOnTermination": true, 
+                                "VolumeId": "vol-79cee78a", 
+                                "AttachTime": "2016-02-02T10:45:18.000Z"
+                            }
+                        }
+                    ], 
+                    "Architecture": "x86_64", 
+                    "RootDeviceType": "ebs", 
+                    "IamInstanceProfile": {
+                        "Id": "AIPAJO47X773IAG3EYVR2", 
+                        "Arn": "arn:aws:iam::375321850564:instance-profile/grit_relay"
+                    }, 
+                    "RootDeviceName": "/dev/sda1", 
+                    "VirtualizationType": "hvm", 
+                    "Tags": [
+                        {
+                            "Value": "PRO GRIT Relay EU-West", 
+                            "Key": "Name"
+                        }
+                    ], 
+                    "AmiLaunchIndex": 0
+                }
+            ]
+        }, 
+        {
+            "OwnerId": "375321850564", 
+            "ReservationId": "r-93b84d3e", 
+            "Groups": [], 
+            "Instances": [
+                {
+                    "Monitoring": {
+                        "State": "disabled"
+                    }, 
+                    "PublicDnsName": null, 
+                    "KernelId": "aki-71665e05", 
+                    "State": {
+                        "Code": 80, 
+                        "Name": "stopped"
+                    }, 
+                    "EbsOptimized": false, 
+                    "LaunchTime": "2015-10-09T20:36:53.000Z", 
+                    "PrivateIpAddress": "172.31.37.31", 
+                    "ProductCodes": [], 
+                    "VpcId": "vpc-2f9f8847", 
+                    "StateTransitionReason": null, 
+                    "InstanceId": "i-a5c6571c", 
+                    "ImageId": "ami-cf5d6cb8", 
+                    "PrivateDnsName": "ip-172-31-37-31.eu-west-1.compute.internal", 
+                    "KeyName": "VEE-PRO1-EU-WEST", 
+                    "SecurityGroups": [
+                        {
+                            "GroupName": "vee_manager", 
+                            "GroupId": "sg-b1e4fed3"
+                        }
+                    ], 
+                    "ClientToken": "FhCfZ1444423013306", 
+                    "SubnetId": "subnet-219f8849", 
+                    "InstanceType": "m1.medium", 
+                    "NetworkInterfaces": [
+                        {
+                            "Status": "in-use", 
+                            "SourceDestCheck": true, 
+                            "VpcId": "vpc-2f9f8847", 
+                            "Description": null, 
+                            "NetworkInterfaceId": "eni-b6546fff", 
+                            "PrivateIpAddresses": [
+                                {
+                                    "PrivateDnsName": "ip-172-31-37-31.eu-west-1.compute.internal", 
+                                    "Primary": true, 
+                                    "PrivateIpAddress": "172.31.37.31"
+                                }
+                            ], 
+                            "PrivateDnsName": "ip-172-31-37-31.eu-west-1.compute.internal", 
+                            "Attachment": {
+                                "Status": "attached", 
+                                "DeviceIndex": 0, 
+                                "DeleteOnTermination": true, 
+                                "AttachmentId": "eni-attach-fbf34ad7", 
+                                "AttachTime": "2015-10-09T20:36:53.000Z"
+                            }, 
+                            "Groups": [
+                                {
+                                    "GroupName": "vee_manager", 
+                                    "GroupId": "sg-b1e4fed3"
+                                }
+                            ], 
+                            "SubnetId": "subnet-219f8849", 
+                            "OwnerId": "375321850564", 
+                            "PrivateIpAddress": "172.31.37.31"
+                        }
+                    ], 
+                    "SourceDestCheck": true, 
+                    "Placement": {
+                        "Tenancy": "default", 
+                        "GroupName": null, 
+                        "AvailabilityZone": "eu-west-1c"
+                    }, 
+                    "Hypervisor": "xen", 
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/sda1", 
+                            "Ebs": {
+                                "Status": "attached", 
+                                "DeleteOnTermination": true, 
+                                "VolumeId": "vol-45655eb5", 
+                                "AttachTime": "2015-10-09T20:36:56.000Z"
+                            }
+                        }
+                    ], 
+                    "Architecture": "x86_64", 
+                    "StateReason": {
+                        "Message": "Client.InstanceInitiatedShutdown: Instance initiated shutdown", 
+                        "Code": "Client.InstanceInitiatedShutdown"
+                    }, 
+                    "IamInstanceProfile": {
+                        "Id": "AIPAJBHZIV6N3CY2Z65G4", 
+                        "Arn": "arn:aws:iam::375321850564:instance-profile/vee_manager"
+                    }, 
+                    "RootDeviceName": "/dev/sda1", 
+                    "VirtualizationType": "paravirtual", 
+                    "RootDeviceType": "ebs", 
+                    "Tags": [
+                        {
+                            "Value": "old VEE Live Manager (IAM)", 
+                            "Key": "Name"
+                        }
+                    ], 
+                    "AmiLaunchIndex": 0
+                }
+            ]
+        }, 
+        {
+            "OwnerId": "375321850564", 
+            "ReservationId": "r-954e642c", 
+            "Groups": [], 
+            "Instances": [
+                {
+                    "Monitoring": {
+                        "State": "disabled"
+                    }, 
+                    "PublicDnsName": "ec2-54-229-58-229.eu-west-1.compute.amazonaws.com", 
+                    "State": {
+                        "Code": 16, 
+                        "Name": "running"
+                    }, 
+                    "EbsOptimized": false, 
+                    "LaunchTime": "2016-05-27T11:01:48.000Z", 
+                    "PublicIpAddress": "54.229.58.229", 
+                    "PrivateIpAddress": "172.32.9.111", 
+                    "ProductCodes": [
+                        {
+                            "ProductCodeId": "6x5jmcajty9edm3f211pqjfn2", 
+                            "ProductCodeType": "marketplace"
+                        }
+                    ], 
+                    "VpcId": "vpc-353f2b50", 
+                    "StateTransitionReason": null, 
+                    "InstanceId": "i-c95c1743", 
+                    "ImageId": "ami-fe83038d", 
+                    "PrivateDnsName": "ip-172-32-9-111.eu-west-1.compute.internal", 
+                    "SecurityGroups": [
+                        {
+                            "GroupName": "default", 
+                            "GroupId": "sg-4b1a0e2f"
+                        }
+                    ], 
+                    "ClientToken": "98070-346844-1464", 
+                    "SubnetId": "subnet-c3db3cb5", 
+                    "InstanceType": "c4.large", 
+                    "NetworkInterfaces": [
+                        {
+                            "Status": "in-use", 
+                            "SourceDestCheck": true, 
+                            "VpcId": "vpc-353f2b50", 
+                            "Description": null, 
+                            "Association": {
+                                "PublicIp": "54.229.58.229", 
+                                "PublicDnsName": "ec2-54-229-58-229.eu-west-1.compute.amazonaws.com", 
+                                "IpOwnerId": "amazon"
+                            }, 
+                            "NetworkInterfaceId": "eni-7e5e3634", 
+                            "PrivateIpAddresses": [
+                                {
+                                    "PrivateDnsName": "ip-172-32-9-111.eu-west-1.compute.internal", 
+                                    "Association": {
+                                        "PublicIp": "54.229.58.229", 
+                                        "PublicDnsName": "ec2-54-229-58-229.eu-west-1.compute.amazonaws.com", 
+                                        "IpOwnerId": "amazon"
+                                    }, 
+                                    "Primary": true, 
+                                    "PrivateIpAddress": "172.32.9.111"
+                                }
+                            ], 
+                            "PrivateDnsName": "ip-172-32-9-111.eu-west-1.compute.internal", 
+                            "Attachment": {
+                                "Status": "attached", 
+                                "DeviceIndex": 0, 
+                                "DeleteOnTermination": true, 
+                                "AttachmentId": "eni-attach-2ffe29ea", 
+                                "AttachTime": "2016-05-27T11:01:48.000Z"
+                            }, 
+                            "Groups": [
+                                {
+                                    "GroupName": "default", 
+                                    "GroupId": "sg-4b1a0e2f"
+                                }
+                            ], 
+                            "SubnetId": "subnet-c3db3cb5", 
+                            "OwnerId": "375321850564", 
+                            "PrivateIpAddress": "172.32.9.111"
+                        }
+                    ], 
+                    "SourceDestCheck": true, 
+                    "Placement": {
+                        "Tenancy": "default", 
+                        "GroupName": null, 
+                        "AvailabilityZone": "eu-west-1c"
+                    }, 
+                    "Hypervisor": "xen", 
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/sda1", 
+                            "Ebs": {
+                                "Status": "attached", 
+                                "DeleteOnTermination": true, 
+                                "VolumeId": "vol-20d6f9d2", 
+                                "AttachTime": "2016-05-27T11:01:48.000Z"
+                            }
+                        }
+                    ], 
+                    "Architecture": "x86_64", 
+                    "RootDeviceType": "ebs", 
+                    "IamInstanceProfile": {
+                        "Id": "AIPAIBJEZV7QMNZJ75LFK", 
+                        "Arn": "arn:aws:iam::375321850564:instance-profile/vee_encoder"
+                    }, 
+                    "RootDeviceName": "/dev/sda1", 
+                    "VirtualizationType": "hvm", 
+                    "AmiLaunchIndex": 0
+                }
+            ]
+        }, 
+        {
+            "OwnerId": "375321850564", 
+            "ReservationId": "r-6776eec6", 
+            "Groups": [], 
+            "Instances": [
+                {
+                    "Monitoring": {
+                        "State": "disabled"
+                    }, 
+                    "PublicDnsName": "ec2-54-229-22-168.eu-west-1.compute.amazonaws.com", 
+                    "KernelId": "aki-52a34525", 
+                    "State": {
+                        "Code": 80, 
+                        "Name": "stopped"
+                    }, 
+                    "EbsOptimized": false, 
+                    "LaunchTime": "2015-11-14T07:38:00.000Z", 
+                    "PublicIpAddress": "54.229.22.168", 
+                    "PrivateIpAddress": "172.31.46.238", 
+                    "ProductCodes": [], 
+                    "VpcId": "vpc-2f9f8847", 
+                    "StateTransitionReason": "User initiated (2016-03-30 20:06:53 GMT)", 
+                    "InstanceId": "i-d4dcf26d", 
+                    "ImageId": "ami-57744520", 
+                    "PrivateDnsName": "ip-172-31-46-238.eu-west-1.compute.internal", 
+                    "KeyName": "LinuxEncoder", 
+                    "SecurityGroups": [
+                        {
+                            "GroupName": "vee_manager", 
+                            "GroupId": "sg-b1e4fed3"
+                        }
+                    ], 
+                    "ClientToken": "jvdFO1447452574758", 
+                    "SubnetId": "subnet-219f8849", 
+                    "InstanceType": "c3.large", 
+                    "NetworkInterfaces": [
+                        {
+                            "Status": "in-use", 
+                            "SourceDestCheck": true, 
+                            "VpcId": "vpc-2f9f8847", 
+                            "Description": null, 
+                            "Association": {
+                                "PublicIp": "54.229.22.168", 
+                                "PublicDnsName": "ec2-54-229-22-168.eu-west-1.compute.amazonaws.com", 
+                                "IpOwnerId": "375321850564"
+                            }, 
+                            "NetworkInterfaceId": "eni-3408d47c", 
+                            "PrivateIpAddresses": [
+                                {
+                                    "PrivateDnsName": "ip-172-31-46-238.eu-west-1.compute.internal", 
+                                    "Association": {
+                                        "PublicIp": "54.229.22.168", 
+                                        "PublicDnsName": "ec2-54-229-22-168.eu-west-1.compute.amazonaws.com", 
+                                        "IpOwnerId": "375321850564"
+                                    }, 
+                                    "Primary": true, 
+                                    "PrivateIpAddress": "172.31.46.238"
+                                }
+                            ], 
+                            "PrivateDnsName": "ip-172-31-46-238.eu-west-1.compute.internal", 
+                            "Attachment": {
+                                "Status": "attached", 
+                                "DeviceIndex": 0, 
+                                "DeleteOnTermination": true, 
+                                "AttachmentId": "eni-attach-900b4ebc", 
+                                "AttachTime": "2015-11-13T22:09:35.000Z"
+                            }, 
+                            "Groups": [
+                                {
+                                    "GroupName": "vee_manager", 
+                                    "GroupId": "sg-b1e4fed3"
+                                }
+                            ], 
+                            "SubnetId": "subnet-219f8849", 
+                            "OwnerId": "375321850564", 
+                            "PrivateIpAddress": "172.31.46.238"
+                        }
+                    ], 
+                    "SourceDestCheck": true, 
+                    "Placement": {
+                        "Tenancy": "default", 
+                        "GroupName": null, 
+                        "AvailabilityZone": "eu-west-1c"
+                    }, 
+                    "Hypervisor": "xen", 
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/sda1", 
+                            "Ebs": {
+                                "Status": "attached", 
+                                "DeleteOnTermination": true, 
+                                "VolumeId": "vol-1473b0e7", 
+                                "AttachTime": "2015-11-13T22:09:38.000Z"
+                            }
+                        }
+                    ], 
+                    "Architecture": "x86_64", 
+                    "StateReason": {
+                        "Message": "Client.UserInitiatedShutdown: User initiated shutdown", 
+                        "Code": "Client.UserInitiatedShutdown"
+                    }, 
+                    "IamInstanceProfile": {
+                        "Id": "AIPAIBJEZV7QMNZJ75LFK", 
+                        "Arn": "arn:aws:iam::375321850564:instance-profile/vee_encoder"
+                    }, 
+                    "RootDeviceName": "/dev/sda1", 
+                    "VirtualizationType": "paravirtual", 
+                    "RootDeviceType": "ebs", 
+                    "Tags": [
+                        {
+                            "Value": "VEE Live S3 Bridge", 
+                            "Key": "Name"
+                        }
+                    ], 
+                    "AmiLaunchIndex": 0
+                }
+            ]
+        }, 
+        {
+            "OwnerId": "375321850564", 
+            "ReservationId": "r-bd4c6e10", 
+            "Groups": [], 
+            "Instances": [
+                {
+                    "Monitoring": {
+                        "State": "disabled"
+                    }, 
+                    "PublicDnsName": "ec2-54-194-202-98.eu-west-1.compute.amazonaws.com", 
+                    "KernelId": "aki-71665e05", 
+                    "State": {
+                        "Code": 80, 
+                        "Name": "stopped"
+                    }, 
+                    "EbsOptimized": false, 
+                    "LaunchTime": "2015-11-14T07:38:08.000Z", 
+                    "PublicIpAddress": "54.194.202.98", 
+                    "PrivateIpAddress": "172.31.28.34", 
+                    "ProductCodes": [], 
+                    "VpcId": "vpc-2f9f8847", 
+                    "StateTransitionReason": "User initiated (2016-03-30 20:06:53 GMT)", 
+                    "InstanceId": "i-4cc338f5", 
+                    "ImageId": "ami-83c810f0", 
+                    "PrivateDnsName": "ip-172-31-28-34.eu-west-1.compute.internal", 
+                    "KeyName": "LinuxEncoder", 
+                    "SecurityGroups": [
+                        {
+                            "GroupName": "vee_manager", 
+                            "GroupId": "sg-b1e4fed3"
+                        }
+                    ], 
+                    "ClientToken": "mPiSb1447127511507", 
+                    "SubnetId": "subnet-209f8848", 
+                    "InstanceType": "c3.large", 
+                    "NetworkInterfaces": [
+                        {
+                            "Status": "in-use", 
+                            "SourceDestCheck": true, 
+                            "VpcId": "vpc-2f9f8847", 
+                            "Description": null, 
+                            "Association": {
+                                "PublicIp": "54.194.202.98", 
+                                "PublicDnsName": "ec2-54-194-202-98.eu-west-1.compute.amazonaws.com", 
+                                "IpOwnerId": "375321850564"
+                            }, 
+                            "NetworkInterfaceId": "eni-4d46572a", 
+                            "PrivateIpAddresses": [
+                                {
+                                    "PrivateDnsName": "ip-172-31-28-34.eu-west-1.compute.internal", 
+                                    "Association": {
+                                        "PublicIp": "54.194.202.98", 
+                                        "PublicDnsName": "ec2-54-194-202-98.eu-west-1.compute.amazonaws.com", 
+                                        "IpOwnerId": "375321850564"
+                                    }, 
+                                    "Primary": true, 
+                                    "PrivateIpAddress": "172.31.28.34"
+                                }
+                            ], 
+                            "PrivateDnsName": "ip-172-31-28-34.eu-west-1.compute.internal", 
+                            "Attachment": {
+                                "Status": "attached", 
+                                "DeviceIndex": 0, 
+                                "DeleteOnTermination": true, 
+                                "AttachmentId": "eni-attach-bcd5b093", 
+                                "AttachTime": "2015-11-10T03:51:52.000Z"
+                            }, 
+                            "Groups": [
+                                {
+                                    "GroupName": "vee_manager", 
+                                    "GroupId": "sg-b1e4fed3"
+                                }
+                            ], 
+                            "SubnetId": "subnet-209f8848", 
+                            "OwnerId": "375321850564", 
+                            "PrivateIpAddress": "172.31.28.34"
+                        }
+                    ], 
+                    "SourceDestCheck": true, 
+                    "Placement": {
+                        "Tenancy": "default", 
+                        "GroupName": null, 
+                        "AvailabilityZone": "eu-west-1b"
+                    }, 
+                    "Hypervisor": "xen", 
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/sda1", 
+                            "Ebs": {
+                                "Status": "attached", 
+                                "DeleteOnTermination": true, 
+                                "VolumeId": "vol-8d43034e", 
+                                "AttachTime": "2015-11-10T03:51:54.000Z"
+                            }
+                        }
+                    ], 
+                    "Architecture": "x86_64", 
+                    "StateReason": {
+                        "Message": "Client.UserInitiatedShutdown: User initiated shutdown", 
+                        "Code": "Client.UserInitiatedShutdown"
+                    }, 
+                    "IamInstanceProfile": {
+                        "Id": "AIPAJBHZIV6N3CY2Z65G4", 
+                        "Arn": "arn:aws:iam::375321850564:instance-profile/vee_manager"
+                    }, 
+                    "RootDeviceName": "/dev/sda1", 
+                    "VirtualizationType": "paravirtual", 
+                    "RootDeviceType": "ebs", 
+                    "Tags": [
+                        {
+                            "Value": "VEE Live Manager (IAM)", 
+                            "Key": "Name"
+                        }
+                    ], 
+                    "AmiLaunchIndex": 0
+                }
+            ]
+        }, 
+        {
+            "OwnerId": "375321850564", 
+            "ReservationId": "r-42dfa9e3", 
+            "Groups": [], 
+            "Instances": [
+                {
+                    "Monitoring": {
+                        "State": "disabled"
+                    }, 
+                    "PublicDnsName": "ec2-52-19-172-72.eu-west-1.compute.amazonaws.com", 
+                    "State": {
+                        "Code": 16, 
+                        "Name": "running"
+                    }, 
+                    "EbsOptimized": true, 
+                    "LaunchTime": "2015-11-30T17:15:20.000Z", 
+                    "PublicIpAddress": "52.19.172.72", 
+                    "PrivateIpAddress": "172.32.8.165", 
+                    "ProductCodes": [
+                        {
+                            "ProductCodeId": "6x5jmcajty9edm3f211pqjfn2", 
+                            "ProductCodeType": "marketplace"
+                        }
+                    ], 
+                    "VpcId": "vpc-df83c9ba", 
+                    "StateTransitionReason": null, 
+                    "InstanceId": "i-40fdf4f9", 
+                    "ImageId": "ami-d652f6a5", 
+                    "PrivateDnsName": "ip-172-32-8-165.eu-west-1.compute.internal", 
+                    "KeyName": "LinuxEncoder", 
+                    "SecurityGroups": [
+                        {
+                            "GroupName": "playlist_proxy", 
+                            "GroupId": "sg-8763f6e3"
+                        }
+                    ], 
+                    "ClientToken": "rMdGa1448903719686", 
+                    "SubnetId": "subnet-4793b630", 
+                    "InstanceType": "c4.large", 
+                    "NetworkInterfaces": [
+                        {
+                            "Status": "in-use", 
+                            "SourceDestCheck": true, 
+                            "VpcId": "vpc-df83c9ba", 
+                            "Description": "Primary network interface", 
+                            "Association": {
+                                "PublicIp": "52.19.172.72", 
+                                "PublicDnsName": "ec2-52-19-172-72.eu-west-1.compute.amazonaws.com", 
+                                "IpOwnerId": "375321850564"
+                            }, 
+                            "NetworkInterfaceId": "eni-c835b380", 
+                            "PrivateIpAddresses": [
+                                {
+                                    "PrivateDnsName": "ip-172-32-8-165.eu-west-1.compute.internal", 
+                                    "Association": {
+                                        "PublicIp": "52.19.172.72", 
+                                        "PublicDnsName": "ec2-52-19-172-72.eu-west-1.compute.amazonaws.com", 
+                                        "IpOwnerId": "375321850564"
+                                    }, 
+                                    "Primary": true, 
+                                    "PrivateIpAddress": "172.32.8.165"
+                                }
+                            ], 
+                            "PrivateDnsName": "ip-172-32-8-165.eu-west-1.compute.internal", 
+                            "Attachment": {
+                                "Status": "attached", 
+                                "DeviceIndex": 0, 
+                                "DeleteOnTermination": true, 
+                                "AttachmentId": "eni-attach-beffed5a", 
+                                "AttachTime": "2015-11-30T17:15:20.000Z"
+                            }, 
+                            "Groups": [
+                                {
+                                    "GroupName": "playlist_proxy", 
+                                    "GroupId": "sg-8763f6e3"
+                                }
+                            ], 
+                            "SubnetId": "subnet-4793b630", 
+                            "OwnerId": "375321850564", 
+                            "PrivateIpAddress": "172.32.8.165"
+                        }
+                    ], 
+                    "SourceDestCheck": true, 
+                    "Placement": {
+                        "Tenancy": "default", 
+                        "GroupName": null, 
+                        "AvailabilityZone": "eu-west-1c"
+                    }, 
+                    "Hypervisor": "xen", 
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/sda1", 
+                            "Ebs": {
+                                "Status": "attached", 
+                                "DeleteOnTermination": true, 
+                                "VolumeId": "vol-1ca60bef", 
+                                "AttachTime": "2015-11-30T17:15:22.000Z"
+                            }
+                        }
+                    ], 
+                    "Architecture": "x86_64", 
+                    "RootDeviceType": "ebs", 
+                    "IamInstanceProfile": {
+                        "Id": "AIPAIBJEZV7QMNZJ75LFK", 
+                        "Arn": "arn:aws:iam::375321850564:instance-profile/vee_encoder"
+                    }, 
+                    "RootDeviceName": "/dev/sda1", 
+                    "VirtualizationType": "hvm", 
+                    "Tags": [
+                        {
+                            "Value": "MEE PRO-A HLS Playlist Proxy", 
+                            "Key": "Name"
+                        }
+                    ], 
+                    "AmiLaunchIndex": 0
+                }
+            ]
+        }, 
+        {
+            "OwnerId": "375321850564", 
+            "ReservationId": "r-6a888f26", 
+            "Groups": [], 
+            "Instances": [
+                {
+                    "Monitoring": {
+                        "State": "disabled"
+                    }, 
+                    "PublicDnsName": null, 
+                    "KernelId": "aki-71665e05", 
+                    "State": {
+                        "Code": 80, 
+                        "Name": "stopped"
+                    }, 
+                    "EbsOptimized": false, 
+                    "LaunchTime": "2015-11-14T07:23:39.000Z", 
+                    "PrivateIpAddress": "172.31.22.139", 
+                    "ProductCodes": [], 
+                    "VpcId": "vpc-2f9f8847", 
+                    "StateTransitionReason": null, 
+                    "InstanceId": "i-c42f608a", 
+                    "ImageId": "ami-8e987ef9", 
+                    "PrivateDnsName": "ip-172-31-22-139.eu-west-1.compute.internal", 
+                    "KeyName": "VEE-PRO1-EU-WEST", 
+                    "SecurityGroups": [
+                        {
+                            "GroupName": "vee_manager", 
+                            "GroupId": "sg-b1e4fed3"
+                        }
+                    ], 
+                    "ClientToken": "cemKf1391159920233", 
+                    "SubnetId": "subnet-209f8848", 
+                    "InstanceType": "m1.medium", 
+                    "NetworkInterfaces": [
+                        {
+                            "Status": "in-use", 
+                            "SourceDestCheck": true, 
+                            "VpcId": "vpc-2f9f8847", 
+                            "Description": null, 
+                            "NetworkInterfaceId": "eni-0340bd66", 
+                            "PrivateIpAddresses": [
+                                {
+                                    "PrivateDnsName": "ip-172-31-22-139.eu-west-1.compute.internal", 
+                                    "Primary": true, 
+                                    "PrivateIpAddress": "172.31.22.139"
+                                }
+                            ], 
+                            "PrivateDnsName": "ip-172-31-22-139.eu-west-1.compute.internal", 
+                            "Attachment": {
+                                "Status": "attached", 
+                                "DeviceIndex": 0, 
+                                "DeleteOnTermination": true, 
+                                "AttachmentId": "eni-attach-423d060e", 
+                                "AttachTime": "2014-01-31T09:18:40.000Z"
+                            }, 
+                            "Groups": [
+                                {
+                                    "GroupName": "vee_manager", 
+                                    "GroupId": "sg-b1e4fed3"
+                                }
+                            ], 
+                            "SubnetId": "subnet-209f8848", 
+                            "OwnerId": "375321850564", 
+                            "PrivateIpAddress": "172.31.22.139"
+                        }
+                    ], 
+                    "SourceDestCheck": true, 
+                    "Placement": {
+                        "Tenancy": "default", 
+                        "GroupName": null, 
+                        "AvailabilityZone": "eu-west-1b"
+                    }, 
+                    "Hypervisor": "xen", 
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/sda1", 
+                            "Ebs": {
+                                "Status": "attached", 
+                                "DeleteOnTermination": true, 
+                                "VolumeId": "vol-3eaa9b12", 
+                                "AttachTime": "2014-01-31T09:18:44.000Z"
+                            }
+                        }
+                    ], 
+                    "Architecture": "x86_64", 
+                    "StateReason": {
+                        "Message": "Client.InstanceInitiatedShutdown: Instance initiated shutdown", 
+                        "Code": "Client.InstanceInitiatedShutdown"
+                    }, 
+                    "RootDeviceName": "/dev/sda1", 
+                    "VirtualizationType": "paravirtual", 
+                    "RootDeviceType": "ebs", 
+                    "Tags": [
+                        {
+                            "Value": "old VEE Live Manager", 
+                            "Key": "Name"
+                        }
+                    ], 
+                    "AmiLaunchIndex": 0
+                }
+            ]
+        }
+    ]
+}

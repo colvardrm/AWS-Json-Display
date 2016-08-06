@@ -1,0 +1,450 @@
+/*table{
+    border-collapse : collapse;
+}
+*/
+#insert_node div.InstanceAndAttachmentTable {
+    width: 23.5%;
+}
+
+#content th {
+    font-size: 9pt;
+}
+
+#content .InstanceTable>tbody>tr>td,
+#content .VolumeTable>tbody>tr>td{
+    font-size: 9pt;
+}
+
+#content .icon-disabled {
+    color: #959595;
+    cursor: not-allowed;
+}
+
+.glyphicon {
+    cursor: pointer;
+}
+
+.TabButton {
+    cursor: pointer;
+}
+
+.Confirmation {
+    font-weight: 600;
+    margin: auto;
+    text-align: center;
+    width: 40%;
+}
+
+.Confirmation>button {
+    margin: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+.Status {
+/*    font-weight: 600; */
+    color: red;
+}
+
+#VpcTable>tbody>tr>td,
+#VpcTable>thead>tr>th {
+    vertical-align: middle;
+}
+
+.InstanceAndAttachmentTable th{
+    font-size: 9pt;
+}
+
+.InstanceAndAttachmentTable {
+    float: left;
+    margin-left: 16px;
+}
+
+
+#content .Invalid>td {
+    border: 1px solid red;
+}
+
+#insert_node .VolumeTable{
+    width : 99%;
+    margin: 0.75%;
+    font-size: 9pt;
+    float: left;
+    min-height: 260px;
+}
+
+#all {
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+}
+
+#TabSection {
+    position: absolute;
+    left: 11%;
+    width: 86%;
+}
+.TabList{
+    border: 1px solid black;
+    padding: 0px;
+    margin: 0px;
+}
+
+.TabList>li{
+    border: 1px solid black;
+    display: inline;
+    font-size: 16pt;
+    font-weight: 600;
+}
+
+.TabList>li>a{
+    text-decoration: none;
+    color: black;
+}
+
+.TabList>li>a:hover{
+    background-color: black;
+}
+
+
+#insert_node .VolumeTable>tbody>tr>th,
+#insert_node .VolumeTable>tbody>tr>td,
+#insert_node .VolumeTable>tbody>tr{
+    padding-left: 10px;
+    padding-bottom: 8px;
+    vertical-align: middle;
+}
+
+.AttachmentTable {
+    margin: 0px;
+}
+
+.InstanceTableRow {
+    margin: 0px;
+}
+
+.InstanceTableRow>tbody>tr>th,
+.InstanceTableRow>tbody>tr>td {
+    padding : 5px;
+}
+
+ul.TableList {
+    list-style: none;
+    padding-left: 0px;
+}
+
+ul.InstanceIdList>li {
+    padding: 0px;
+}
+
+.glyphicon {
+    float: right;
+}
+
+li>.glyphicon {
+    float: none;
+}
+
+.InstanceTable, .AttachmentTable {
+    width : 100%;
+}
+
+.InstanceTable {
+    margin-bottom : 0px;
+}
+
+.AttachmentTable {
+    margin-top : 0px;
+    background-color : #FFFFFF;
+}
+
+
+.Title {
+    font-size : 20pt;
+    clear: both;
+    font-family: sans-serif;
+    font-weight: 600;
+    text-align : center;
+    margin-top : 40px;
+}
+
+.table-striped>tbody>tr:nth-child(odd)>td,
+.table-striped>tbody>tr:nth-child(odd)>th {
+   background-color: #E2E2E2;
+}
+
+
+ul.TotalVolumesAndInstances {
+    float: left;
+    margin-left: 20%;
+}
+
+ul {
+    list-style: none;
+}
+
+ul.VolumeChecks {
+    float: right;
+    margin-right: 20%;
+}
+
+.table-bordered {
+  border: 1px solid #B7B7B7;
+}
+.table-bordered > thead > tr > th,
+.table-bordered > tbody > tr > th,
+.table-bordered > tfoot > tr > th,
+.table-bordered > thead > tr > td,
+.table-bordered > tbody > tr > td,
+.table-bordered > tfoot > tr > td {
+    border: 1px solid #B7B7B7;
+}
+
+
+#content .table > thead > tr > th,
+#content .table > tbody > tr > th,
+#content .table > tfoot > tr > th,
+#content .table > thead > tr > td,
+#content .table > tbody > tr > td,
+#content .table > tfoot > tr > td {
+    padding: 0px;
+}
+
+.table-bordered > thead > tr > th,
+.table-bordered > thead > tr > td {
+  border-bottom-width: 2px;
+}
+
+#content .UnusedVolumesText {
+    clear: both;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+#content .VolumesAndInstancesTable {
+    width: 60%;
+    margin: auto;
+    height: 20px;
+    empty-cells: hide;
+}
+
+
+#content .VolumesAndInstancesTable>thead>tr>th,
+#content .VolumesAndInstancesTable>thead>tr>td,
+#content .VolumesAndInstancesTable>tbody>tr>td,
+#content .VolumesAndInstancesTable>tbody>tr>th{
+    padding: 0px;
+    text-align: center;
+    margin: auto;
+}
+
+#content .TableText {
+    font-size: 10pt;
+}
+
+.UnusedVolume,
+.UnattachedVolume {
+    border: 2px solid red;
+}
+
+.FilterCheckbox {
+    line-height: 0.65;
+    float: left;
+    margin-right: 1%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0px;
+}
+
+th {
+    font-size : 10pt;
+}
+
+.Total{
+    margin: auto;
+    text-align: center;
+}
+
+.TotalDisplay {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-weight: 600;
+    font-size: 13pt;
+}
+
+.RegionList {
+    font-size: 12pt;
+    font-weight: 500;
+    padding: 0px;
+}
+
+.RegionList>li {
+    padding: 0px;
+    display: inline;
+
+}
+
+.Region {
+    text-align: center;
+    font-weight: 600;
+    font-size: 13pt;
+    margin: auto;
+}
+
+body {
+    margin-top: 0px;
+    overflow: auto;
+    position : absolute;
+    min-height: 100%;
+    width: 100%;
+}
+
+
+.SelectedDisplay {
+    margin-top: 0px;
+    text-align: center;
+    margin: auto;
+}
+
+.Error {
+    width : 23.5%;
+    float: left;
+    text-align: center;
+    font-size : 14pt;
+    background: linear-gradient(to bottom right, #910606, #E81111, #830404);
+    margin: 8.5px;
+    border : 2px solid black;
+    color : white;
+    border-radius : 15px;
+    margin-bottom : 15px;
+    margin-top: 20px;
+}
+
+.Vpcs {
+    clear: both;
+    margin-top: 30px;
+}
+
+#CurrentRegion {
+    float: left;
+    position: absolute;
+    left: 13%;
+    font-size: 13pt;
+}
+
+div#content{
+    padding-top: 5%;
+    width: 75%;
+    margin-left: 18%;
+    height: 100%;
+    overflow: auto;
+}
+
+.SmallError {
+    text-align : center;
+    background-color : #FF3F3F;
+}
+
+
+.header {
+    margin-left: 12.5%;
+    margin-top: 0px;
+    position: absolute;
+    font-size: 28pt;
+    font-family: sans-serif;
+    top: 30px;
+    color: #FFFFFF;
+}
+
+#Title {
+    background-color: #101117;
+    margin-top: 0px;
+    height: 100px;
+}
+
+
+#LeftBar {
+    width: 12%;
+    z-index: 1;
+    background-color: #C9C9C9;
+    position: absolute;
+    left: 0px;
+    min-height: 100%;
+
+}
+
+#RightBar {
+    width: 3%;
+    background-color: #C9C9C9;
+    position: absolute;
+    right: 0px;
+    min-height: 100%;
+
+}
+
+#VpcTable>tbody>tr>td{
+    font-size: 9pt;
+}
+
+#VpcTable>thead>tr>th{
+    font-size: 10pt;
+}
+
+#content .HighlightedRow>.LongRow
+{
+    color: red;
+}
+
+#content .HighlightedRow>.LongRow>.icon-enabled {
+    color: black;
+}
+
+#VpcTable>tbody>tr>td>ul{
+    float: right;
+}
+
+#content .ReducedWidth {
+    width: 10px;
+}
+
+#Accounts>ul{
+    font-size: 14pt;
+    font-weight: normal;
+    list-style-type: circle;
+    padding-left: 20px;
+    margin-bottom: 0px;
+}
+
+#Accounts{
+    font-size: 20pt;
+    font-weight: 600;
+}
+
+#Accounts>ul.NewAccount {
+    list-style: none;
+    padding-left: 0px;
+    margin-top: 0px;
+}
+
+#Accounts .form-group{
+    font-size: 12pt;
+}
+
+#AccountStatus {
+    font-size: 14pt;
+}
+
+.AddAccount {
+    cursor: pointer;
+}
+
+.AddAccount:hover {
+    text-decoration: underline;
+    color: blue;
+}
+
+#AddAccountCancel {
+    margin-left: 15px;
+}

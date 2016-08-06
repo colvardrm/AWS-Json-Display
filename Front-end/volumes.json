@@ -1,0 +1,143 @@
+{
+    "Volumes": [
+        {
+            "AvailabilityZone": "eu-west-1c", 
+            "Attachments": [
+                {
+                    "AttachTime": "2015-10-09T20:36:56.000Z", 
+                    "InstanceId": "i-a5c6571c", 
+                    "VolumeId": "vol-45655eb5", 
+                    "State": "attached", 
+                    "DeleteOnTermination": true, 
+                    "Device": "/dev/sda1"
+                }
+            ], 
+            "VolumeType": "gp2", 
+            "VolumeId": "vol-45655eb5", 
+            "State": "in-use", 
+            "Iops": 150, 
+            "SnapshotId": "snap-79b237b0", 
+            "CreateTime": "2015-10-09T20:36:55.980Z", 
+            "Size": 50
+        }, 
+        {
+            "AvailabilityZone": "eu-west-1c", 
+            "Attachments": [
+                {
+                    "AttachTime": "2015-11-13T22:09:38.000Z", 
+                    "InstanceId": "i-d4dcf26d", 
+                    "VolumeId": "vol-1473b0e7", 
+                    "State": "attached", 
+                    "DeleteOnTermination": true, 
+                    "Device": "/dev/sda1"
+                }
+            ], 
+            "VolumeType": "io1", 
+            "VolumeId": "vol-1473b0e7", 
+            "State": "in-use", 
+            "Iops": 1000, 
+            "SnapshotId": "snap-fb56f3d2", 
+            "CreateTime": "2015-11-13T22:09:38.132Z", 
+            "Size": 250
+        }, 
+        {
+            "AvailabilityZone": "eu-west-1c", 
+            "Attachments": [
+                {
+                    "AttachTime": "2015-11-30T17:15:22.000Z", 
+                    "InstanceId": "i-40fdf4f9", 
+                    "VolumeId": "vol-1ca60bef", 
+                    "State": "attached", 
+                    "DeleteOnTermination": true, 
+                    "Device": "/dev/sda1"
+                }
+            ], 
+            "VolumeType": "io1", 
+            "VolumeId": "vol-1ca60bef", 
+            "State": "in-use", 
+            "Iops": 2000, 
+            "SnapshotId": "snap-fe9bc4a8", 
+            "CreateTime": "2015-11-30T17:15:22.740Z", 
+            "Size": 500
+        }, 
+        {
+            "AvailabilityZone": "eu-west-1c", 
+            "Attachments": [
+                {
+                    "AttachTime": "2016-02-02T10:45:18.000Z", 
+                    "InstanceId": "i-0beaf480", 
+                    "VolumeId": "vol-79cee78a", 
+                    "State": "attached", 
+                    "DeleteOnTermination": true, 
+                    "Device": "/dev/sda1"
+                }
+            ], 
+            "VolumeType": "io1", 
+            "VolumeId": "vol-79cee78a", 
+            "State": "in-use", 
+            "Iops": 2000, 
+            "SnapshotId": "snap-71224459", 
+            "CreateTime": "2016-02-02T10:45:18.138Z", 
+            "Size": 2000
+        }, 
+        {
+            "AvailabilityZone": "eu-west-1c", 
+            "Attachments": [
+                {
+                    "AttachTime": "2016-05-27T11:01:48.000Z", 
+                    "InstanceId": "i-c95c1743", 
+                    "VolumeId": "vol-20d6f9d2", 
+                    "State": "attached", 
+                    "DeleteOnTermination": true, 
+                    "Device": "/dev/sda1"
+                }
+            ], 
+            "VolumeType": "io1", 
+            "VolumeId": "vol-20d6f9d2", 
+            "State": "in-use", 
+            "Iops": 2000, 
+            "SnapshotId": "snap-d35e8887", 
+            "CreateTime": "2016-05-27T11:01:48.793Z", 
+            "Size": 500
+        }, 
+        {
+            "AvailabilityZone": "eu-west-1b", 
+            "Attachments": [
+                {
+                    "AttachTime": "2014-01-31T09:18:44.000Z", 
+                    "InstanceId": "i-c42f608a", 
+                    "VolumeId": "vol-3eaa9b12", 
+                    "State": "attached", 
+                    "DeleteOnTermination": true, 
+                    "Device": "/dev/sda1"
+                }
+            ], 
+            "VolumeType": "standard", 
+            "VolumeId": "vol-3eaa9b12", 
+            "State": "in-use", 
+            "SnapshotId": "snap-530efb4d", 
+            "CreateTime": "2014-01-31T09:18:44.768Z", 
+            "Size": 50
+        }, 
+        {
+            "AvailabilityZone": "eu-west-1b", 
+            "Attachments": [
+                {
+                    "AttachTime": "2015-11-10T03:51:54.000Z", 
+                    "InstanceId": "i-4cc338f5", 
+                    "VolumeId": "vol-8d43034e", 
+                    "State": "attached", 
+                    "DeleteOnTermination": true, 
+                    "Device": "/dev/sda1"
+                }
+            ], 
+            "VolumeType": "io1", 
+            "VolumeId": "vol-8d43034e", 
+            "State": "in-use", 
+            "Iops": 1500, 
+            "SnapshotId": "snap-cd826de4", 
+            "CreateTime": "2015-11-10T03:51:54.642Z", 
+            "Size": 50
+        }
+    ]
+}
